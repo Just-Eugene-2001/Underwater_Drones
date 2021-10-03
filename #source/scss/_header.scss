@@ -1,0 +1,65 @@
+header{
+    h2{
+        font-family: Xolonium-Bold;
+        text-transform: uppercase;
+    }
+    h3{
+        font-family: Xolonium-Bold;
+        text-transform: uppercase;
+    }
+    ul li:hover ul{
+        display:block;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: $gray-800!important;
+    }
+    @media (min-width:1671.98px) {
+        h2{
+            font-size: 1.75em!important;
+        }
+        h3{
+            font-size: 1.5em!important;
+        }
+        
+    }
+    @media (min-width:1503.98px) and (max-width:1671.98px) {
+        h2{
+            font-size: 1.5em!important;
+        }
+        h3{
+            font-size: 1.25em!important;
+        }
+    }
+    @media (min-width:1093.98px) and (max-width:1503.98px) {
+        h2{
+            font-size: 1.13em!important;
+        }
+        h3{
+            font-size: 1em!important;
+        }
+        .logo{
+            max-width: 250px;
+            height: auto;
+        }
+    }
+    @media (max-width:1093.98px) {
+        h2{
+            font-size: 0.95em!important;
+        }
+        h3{
+            font-size: 0.8em!important;
+        }
+        .logo{
+            max-width: 250px;
+            height: auto;
+        }
+    }
+    @media (max-width:991.98px) {
+        .dropdown-toggle::after {
+            display:none;
+        }
+        ul li:hover ul{
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+footer{
+    .ico{
+        height: 30px;
+        width: 30px;
+    }
+    @media (max-width: 467.98px) {
+        .center{
+            text-align: center;
+        }
+    }
+    .link-light{
+        color: #9B9D9E;
+    }
+    a{
+        font-family: "Montserrat-Medium";
+    }
+}
