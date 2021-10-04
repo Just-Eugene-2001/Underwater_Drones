@@ -1,10 +1,10 @@
 header{
     h2{
-        font-family: Xolonium-Bold;
+        font-family: 'Xolonium-Bold';
         text-transform: uppercase;
     }
     h3{
-        font-family: Xolonium-Bold;
+        font-family: 'Xolonium-Bold';
         text-transform: uppercase;
     }
     ul li:hover ul{
@@ -13,45 +13,53 @@ header{
     .dropdown-item.active, .dropdown-item:active {
         background-color: $gray-800!important;
     }
-    @media (min-width:1671.98px) {
+    @media (min-width:1288.98px) {
         h2{
-            font-size: 1.75em!important;
+            font-size: 1.3em;
         }
         h3{
-            font-size: 1.5em!important;
-        }
-        
-    }
-    @media (min-width:1503.98px) and (max-width:1671.98px) {
-        h2{
-            font-size: 1.5em!important;
-        }
-        h3{
-            font-size: 1.25em!important;
-        }
-    }
-    @media (min-width:1093.98px) and (max-width:1503.98px) {
-        h2{
-            font-size: 1.13em!important;
-        }
-        h3{
-            font-size: 1em!important;
+            font-size: 1.15em;
         }
         .logo{
-            max-width: 250px;
-            height: auto;
+            max-width: auto;
+            height: 70px;
+        }
+        .navbar-nav {
+            margin-bottom: -25px;
         }
     }
-    @media (max-width:1093.98px) {
+    @media (min-width: 1180.98px) and (max-width: 1288.98px) {
         h2{
-            font-size: 0.95em!important;
+          font-size: 1.13em;
         }
         h3{
-            font-size: 0.8em!important;
+          font-size: 1em;
         }
-        .logo{
-            max-width: 250px;
-            height: auto;
+        .logo {
+          max-width: auto;
+          height: 70px;
+        }
+        .navbar-nav {
+          margin-bottom: -30px;
+        }
+    }
+    @media (min-width: 991.98px) and (max-width: 1180.98px) {
+        h2{
+          font-size: 0.95em;
+        }
+        h3{
+          font-size: 0.8em;
+        }
+        .logo {
+          max-width: auto;
+          height: 70px;
+        }
+        .mx-2 {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .navbar-nav {
+          margin-bottom: -30px;
         }
     }
     @media (max-width:991.98px) {
@@ -60,6 +68,22 @@ header{
         }
         ul li:hover ul{
             display:none;
+        }
+        h2{
+            font-size: 0.95em;
+          }
+        h3{
+            font-size: 0.8em;
+        }
+        .logo {
+            max-width: auto;
+            height: 70px;
+        }
+    }
+    @media (max-width:367.98px) {
+        .logo {
+            max-width: auto;
+            height: 50px;
         }
     }
 }

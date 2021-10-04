@@ -672,17 +672,17 @@ progress {
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 900px;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1000px;
   }
 }
 .row {
@@ -12501,11 +12501,11 @@ textarea.form-control-lg {
   }
 }
 header h2, header .h2 {
-  font-family: Xolonium-Bold;
+  font-family: "Xolonium-Bold";
   text-transform: uppercase;
 }
 header h3, header .h3 {
-  font-family: Xolonium-Bold;
+  font-family: "Xolonium-Bold";
   text-transform: uppercase;
 }
 header ul li:hover ul {
@@ -12514,44 +12514,53 @@ header ul li:hover ul {
 header .dropdown-item.active, header .dropdown-item:active {
   background-color: #343a40 !important;
 }
-@media (min-width: 1671.98px) {
+@media (min-width: 1288.98px) {
   header h2, header .h2 {
-    font-size: 1.75em !important;
+    font-size: 1.3em;
   }
   header h3, header .h3 {
-    font-size: 1.5em !important;
-  }
-}
-@media (min-width: 1503.98px) and (max-width: 1671.98px) {
-  header h2, header .h2 {
-    font-size: 1.5em !important;
-  }
-  header h3, header .h3 {
-    font-size: 1.25em !important;
-  }
-}
-@media (min-width: 1093.98px) and (max-width: 1503.98px) {
-  header h2, header .h2 {
-    font-size: 1.13em !important;
-  }
-  header h3, header .h3 {
-    font-size: 1em !important;
+    font-size: 1.15em;
   }
   header .logo {
-    max-width: 250px;
-    height: auto;
+    max-width: auto;
+    height: 70px;
+  }
+  header .navbar-nav {
+    margin-bottom: -25px;
   }
 }
-@media (max-width: 1093.98px) {
+@media (min-width: 1180.98px) and (max-width: 1288.98px) {
   header h2, header .h2 {
-    font-size: 0.95em !important;
+    font-size: 1.13em;
   }
   header h3, header .h3 {
-    font-size: 0.8em !important;
+    font-size: 1em;
   }
   header .logo {
-    max-width: 250px;
-    height: auto;
+    max-width: auto;
+    height: 70px;
+  }
+  header .navbar-nav {
+    margin-bottom: -30px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1180.98px) {
+  header h2, header .h2 {
+    font-size: 0.95em;
+  }
+  header h3, header .h3 {
+    font-size: 0.8em;
+  }
+  header .logo {
+    max-width: auto;
+    height: 70px;
+  }
+  header .mx-2 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  header .navbar-nav {
+    margin-bottom: -30px;
   }
 }
 @media (max-width: 991.98px) {
@@ -12560,6 +12569,22 @@ header .dropdown-item.active, header .dropdown-item:active {
   }
   header ul li:hover ul {
     display: none;
+  }
+  header h2, header .h2 {
+    font-size: 0.95em;
+  }
+  header h3, header .h3 {
+    font-size: 0.8em;
+  }
+  header .logo {
+    max-width: auto;
+    height: 70px;
+  }
+}
+@media (max-width: 367.98px) {
+  header .logo {
+    max-width: auto;
+    height: 50px;
   }
 }
 
@@ -12584,7 +12609,7 @@ body {
 }
 
 .title {
-  background-image: url("../img/background-tile_7.png");
+  background-image: url("../img/background-tile_7.jpg");
   background-position: top center;
   margin-bottom: 30px;
 }
@@ -12596,22 +12621,10 @@ body {
   font-family: "Montserrat-Medium";
   color: white;
 }
-@media (min-width: 1503.98px) {
+@media (min-width: 991.98px) {
   .title {
     height: 140px;
-    margin-top: 136px;
-  }
-  .title h1, .title .h1 {
-    font-size: 3em;
-  }
-  .title h2, .title .h2 {
-    font-size: 2em;
-  }
-}
-@media (min-width: 766.98px) and (max-width: 1503.98px) {
-  .title {
-    height: 140px;
-    margin-top: 91px;
+    margin-top: 96px;
   }
   .title h1, .title .h1 {
     font-size: 2.5em;
@@ -12620,10 +12633,10 @@ body {
     font-size: 1.75em;
   }
 }
-@media (min-width: 450.98px) and (max-width: 766.98px) {
+@media (min-width: 767.98px) and (max-width: 991.98px) {
   .title {
     height: 140px;
-    margin-top: 91px;
+    margin-top: 96px;
   }
   .title h1, .title .h1 {
     font-size: 2em;
@@ -12632,10 +12645,10 @@ body {
     font-size: 1.5em;
   }
 }
-@media (max-width: 450.98px) {
+@media (min-width: 367.98px) and (max-width: 767.98px) {
   .title {
     height: 140px;
-    margin-top: 91px;
+    margin-top: 96px;
   }
   .title h1, .title .h1 {
     font-size: 1.5em;
@@ -12643,6 +12656,21 @@ body {
   .title h2, .title .h2 {
     font-size: 1.2em;
   }
+}
+@media (max-width: 367.98px) {
+  .title {
+    height: 140px;
+    margin-top: 76px;
+  }
+  .title h1, .title .h1 {
+    font-size: 1.5em;
+  }
+  .title h2, .title .h2 {
+    font-size: 1.2em;
+  }
+}
+.title div {
+  width: 90%;
 }
 
 .title-block {
@@ -12677,6 +12705,7 @@ body {
 #last_news .news-text, #news .news-text {
   font-family: "Montserrat-Medium";
   color: #a0a0a0;
+  text-align: justify;
 }
 #last_news .news-date, #news .news-date {
   font-family: "Montserrat-Medium";
@@ -12693,58 +12722,42 @@ body {
 
 #partners {
   background-color: #2E4164;
+  height: 330px;
 }
 #partners section {
-  height: 200px;
-  width: 400px;
+  height: 180px;
+  width: 290px;
+}
+#partners .img-partners {
+  min-height: 100px;
+  max-height: 180px;
+  max-width: 266px;
 }
 #partners .carousel-control-prev, #partners .carousel-control-next {
   width: 6%;
 }
 @media (min-width: 1399.98px) {
-  #partners {
-    height: 582px;
-  }
   #partners .mobile-carousel {
     display: none;
   }
   #partners .pc-carousel2 {
     display: none;
   }
-  #partners .img-partners {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 376px;
-  }
 }
-@media (min-width: 990.98px) and (max-width: 1399.98px) {
-  #partners {
-    height: 582px;
-  }
+@media (min-width: 767.98px) and (max-width: 1399.98px) {
   #partners .pc-carousel1 {
     display: none;
   }
   #partners .mobile-carousel {
     display: none;
   }
-  #partners .img-partners {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 376px;
-  }
 }
-@media (max-width: 990.98px) {
-  #partners {
-    max-width: 90%;
-  }
+@media (max-width: 767.98px) {
   #partners .pc-carousel1 {
     display: none;
   }
   #partners .pc-carousel2 {
     display: none;
-  }
-  #partners .carousel-item {
-    height: 220px;
   }
 }
 
@@ -12788,6 +12801,10 @@ body {
 }
 
 #contacts li {
+  font-family: "Montserrat-Medium";
+}
+
+#proj {
   font-family: "Montserrat-Medium";
 }
 /*# sourceMappingURL=style.css.map */

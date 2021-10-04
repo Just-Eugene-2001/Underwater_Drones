@@ -33,6 +33,18 @@ $black:    #000000 ;
 $secondary:     $gray-900;
 $dark:          #0F1012;
 
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 860px,
+  xl: 900px,
+  xxl: 1000px
+) ;
+// scss-docs-end container-max-widths
+
+
+
 //IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -44,7 +56,7 @@ body{
 
 }
 .title{
-    background-image: url("../img/background-tile_7.png");
+    background-image: url("../img/background-tile_7.jpg");
     background-position: top center;
     margin-bottom: 30px;
     h1{
@@ -55,19 +67,9 @@ body{
         font-family: "Montserrat-Medium";
         color: rgb(255, 255, 255);
     }
-    @media (min-width:1503.98px) {
+    @media (min-width:991.98px){
         height: 140px;
-        margin-top: 136px;
-        h1{
-            font-size: 3em;
-        }
-        h2{
-            font-size: 2em;
-        }
-    }
-    @media (min-width:766.98px) and (max-width:1503.98px) {
-        height: 140px;
-        margin-top: 91px;
+        margin-top: 96px;
         h1{
             font-size: 2.5em;
         }
@@ -75,9 +77,9 @@ body{
             font-size: 1.75em;
         }
     }
-    @media (min-width:450.98px) and (max-width:766.98px) {
+    @media (min-width:767.98px) and (max-width:991.98px) {
         height: 140px;
-        margin-top: 91px;
+        margin-top: 96px;
         h1{
             font-size: 2em;
         }
@@ -85,15 +87,28 @@ body{
             font-size: 1.5em;
         }
     }
-    @media (max-width:450.98px) {
+    @media (min-width:367.98px) and (max-width:767.98px) {
         height: 140px;
-        margin-top: 91px;
+        margin-top: 96px;
         h1{
             font-size: 1.5em;
         }
         h2{
             font-size: 1.2em;
         }
+    }
+    @media (max-width:367.98px) {
+        height: 140px;
+        margin-top: 76px;
+        h1{
+            font-size: 1.5em;
+        }
+        h2{
+            font-size: 1.2em;
+        }
+    }
+    div{
+        width: 90%;
     }
 }
 
@@ -130,6 +145,7 @@ body{
     .news-text{
         font-family: "Montserrat-Medium";
         color: #a0a0a0;
+        text-align: justify;
     }
     .news-date{
         font-family: "Montserrat-Medium";
@@ -149,11 +165,17 @@ body{
 
 #partners{
     background-color: #2E4164;
-
+    height: 330px;
     
     section{
-        height: 200px;
-        width: 400px;
+        height: 180px;
+        width: 290px;
+    }
+    
+    .img-partners{
+        min-height: 100px;
+        max-height: 180px;
+        max-width: 266px;
     }
     
     .carousel-control-prev, .carousel-control-next{
@@ -168,14 +190,8 @@ body{
         .pc-carousel2{
             display: none;
         }
-        .img-partners{
-            min-height: 100px;
-            max-height: 200px;
-            max-width: 376px;
-        }
-        height: 582px;
     }
-    @media (min-width: 990.98px) and (max-width: 1399.98px) {
+    @media (min-width: 767.98px) and (max-width: 1399.98px) {
         
         .pc-carousel1{
             display: none;
@@ -183,25 +199,14 @@ body{
         .mobile-carousel{
             display: none;
         }
-        .img-partners{
-            min-height: 100px;
-            max-height: 200px;
-            max-width: 376px;
-        }
-        height: 582px;
     }    
-    @media (max-width: 990.98px) {
+    @media (max-width: 767.98px) {
         
         .pc-carousel1{
             display: none;
         }
         .pc-carousel2{
             display: none;
-        }
-        max-width: 90%;
-        .carousel-item{
-            height: 220px;
-            
         }
     }
 }
@@ -257,4 +262,8 @@ body{
     li{
         font-family: "Montserrat-Medium";
     }
+}
+
+#proj {
+    font-family: "Montserrat-Medium" ;
 }
